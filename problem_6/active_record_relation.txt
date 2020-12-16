@@ -8,10 +8,10 @@ class Shop < ApplicationRecord
   has_many :products
 end
 
-class Product < ApplicationRecord
-  attr_accessor :prices
-  attr_accessor :dates
+# start_date, end_date and discount_percentage column are added in order to do
+# operation on products price that will be different prices on different dates.
 
+class Product < ApplicationRecord
   belongs_to :shop
 
   has_many :categories
