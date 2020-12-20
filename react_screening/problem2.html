@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="problem3.js"></script>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .picture {
+          /* The image used */
+          background-image: url("scene.jpg");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        .block {
+          background: blueviolet;
+          width: 500px;
+          height: 300px;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          /* bring your own prefixes */
+          transform: translate(-50%, -50%);
+        }
+        @media(max-width: 600px){
+            .block{
+                width: 100vw;
+            }
+        }
+        </style>
+    <title>Problem 2</title>
+</head>
+<body>
+    <div class="picture"></div>
+    <div class="block"></div>
+</body>
+</html>
